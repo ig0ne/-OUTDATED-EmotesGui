@@ -31,11 +31,11 @@ Menu.item = {
         {['Title'] = 'Sport', ['SubMenu'] = {
 				['Title'] = 'Sport',
 					['Items'] = {
-									{ ['Title'] = "Yoga", 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_YOGA"},
-									{ ['Title'] = 'Pompes', 		Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_PUSH_UPS"},
-									{ ['Title'] = 'Jogging', 		Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_JOG_STANDING"},
-									{ ['Title'] = 'Bodybuilder', 	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_MUSCLE_FLEX"},
-									{ ['Title'] = 'Soulever poids', Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_MUSCLE_FREE_WEIGHTS"},
+									{ ['Title'] = "Yoga", 			Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_YOGA"},
+									{ ['Title'] = 'Pompes', 		Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_PUSH_UPS"},
+									{ ['Title'] = 'Jogging', 		Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_JOG_STANDING"},
+									{ ['Title'] = 'Bodybuilder', 	Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_MUSCLE_FLEX"},
+									{ ['Title'] = 'Soulever poids', Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_MUSCLE_FREE_WEIGHTS"},
 										}
 									}
 								},
@@ -45,12 +45,12 @@ Menu.item = {
 		{['Title'] = 'Festif', ['SubMenu'] = {
 				['Title'] = 'Festif',
 							['Items'] = {
-									{ ['Title'] = 'Musique', 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_MUSICIAN"},
-									{ ['Title'] = 'Fumer', 				Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_SMOKING"},
-									{ ['Title'] = 'Fumer joint', 		Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_SMOKING_POT"},
-									{ ['Title'] = 'Boire bouteille', 	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_DRINKING"},
-									{ ['Title'] = 'Boire bière', 		Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_PARTYING"},
-									{ ['Title'] = 'Applaudir', 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_CHEERING"},
+									{ ['Title'] = 'Musique', 			Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_MUSICIAN"},
+									{ ['Title'] = 'Fumer', 				Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_SMOKING"},
+									{ ['Title'] = 'Fumer joint', 		Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_SMOKING_POT"},
+									{ ['Title'] = 'Boire bouteille', 	Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_DRINKING"},
+									{ ['Title'] = 'Boire bière', 		Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_PARTYING"},
+									{ ['Title'] = 'Applaudir', 			Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_CHEERING"},
 									{ ['Title'] = "Danser", 			Function = playAmination , dictionaries = "amb@world_human_partying@female@partying_beer@base", clip = "base" },
 										}
 									}
@@ -67,12 +67,12 @@ Menu.item = {
 									{['Title'] = 'Police', ['SubMenu'] = {
 											['Title'] = 'Police',
 														['Items'] = {					
-																{ ['Title'] = 'Examiner', 	Function = playEmoteLoop, ['EmoteName'] = "CODE_HUMAN_MEDIC_KNEEL"},
-																{ ['Title'] = 'Calepin', 	Function = playEmoteLoop, ['EmoteName'] = "CODE_HUMAN_MEDIC_TIME_OF_DEATH"},
-																{ ['Title'] = 'Clipboard', 	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_CLIPBOARD"},
-																{ ['Title'] = 'Jumelles', 	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_BINOCULARS"},
-																{ ['Title'] = 'Police', 	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_COP_IDLES"},
-																{ ['Title'] = 'Trafique', 	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_CAR_PARK_ATTENDANT"},
+																{ ['Title'] = 'Examiner', 	Function = playEmote, ['EmoteName'] = "CODE_HUMAN_MEDIC_KNEEL"},
+																{ ['Title'] = 'Calepin', 	Function = playEmote, ['EmoteName'] = "CODE_HUMAN_MEDIC_TIME_OF_DEATH"},
+																{ ['Title'] = 'Clipboard', 	Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_CLIPBOARD"},
+																{ ['Title'] = 'Jumelles', 	Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_BINOCULARS"},
+																{ ['Title'] = 'Police', 	Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_COP_IDLES"},
+																{ ['Title'] = 'Trafique', 	Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_CAR_PARK_ATTENDANT"},
 																	}
 																}
 															},
@@ -82,10 +82,10 @@ Menu.item = {
 									{['Title'] = 'Medecin', ['SubMenu'] = {
 											['Title'] = 'Medecin',
 														['Items'] = {					
-																{ ['Title'] = 'Examiner', 			Function = playEmoteLoop, ['EmoteName'] = "CODE_HUMAN_MEDIC_KNEEL"},
-																{ ['Title'] = 'Calepin', 			Function = playEmoteLoop, ['EmoteName'] = "CODE_HUMAN_MEDIC_TIME_OF_DEATH"},
-																{ ['Title'] = 'Clipboard', 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_CLIPBOARD"},
-																{ ['Title'] = 'Prendre le pouls', 	Function = playEmoteLoop, ['EmoteName'] = "CODE_HUMAN_MEDIC_TEND_TO_DEAD"},
+																{ ['Title'] = 'Examiner', 			Function = playEmote, ['EmoteName'] = "CODE_HUMAN_MEDIC_KNEEL"},
+																{ ['Title'] = 'Calepin', 			Function = playEmote, ['EmoteName'] = "CODE_HUMAN_MEDIC_TIME_OF_DEATH"},
+																{ ['Title'] = 'Clipboard', 			Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_CLIPBOARD"},
+																{ ['Title'] = 'Prendre le pouls', 	Function = playEmote, ['EmoteName'] = "CODE_HUMAN_MEDIC_TEND_TO_DEAD"},
 																	}
 																}
 															},
@@ -95,13 +95,13 @@ Menu.item = {
 									{['Title'] = 'Medecin', ['SubMenu'] = {
 											['Title'] = 'Medecin',
 														['Items'] = {					
-																{ ['Title'] = 'Examiner', 			Function = playEmoteLoop, ['EmoteName'] = "CODE_HUMAN_MEDIC_KNEEL"},
-																{ ['Title'] = 'Calepin', 			Function = playEmoteLoop, ['EmoteName'] = "CODE_HUMAN_MEDIC_TIME_OF_DEATH"},
-																{ ['Title'] = 'Clipboard', 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_CLIPBOARD"},
-																{ ['Title'] = 'Marteau', 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_HAMMERING"},
-																{ ['Title'] = 'Mécanicien', 		Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_VEHICLE_MECHANIC"},
-																{ ['Title'] = 'Soudure', 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_WELDING"},
-																{ ['Title'] = 'Réparer moteur', 	Function = playEmoteLoop, ['EmoteName'] = "PROP_HUMAN_BUM_BIN"},
+																{ ['Title'] = 'Examiner', 			Function = playEmote, ['EmoteName'] = "CODE_HUMAN_MEDIC_KNEEL"},
+																{ ['Title'] = 'Calepin', 			Function = playEmote, ['EmoteName'] = "CODE_HUMAN_MEDIC_TIME_OF_DEATH"},
+																{ ['Title'] = 'Clipboard', 			Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_CLIPBOARD"},
+																{ ['Title'] = 'Marteau', 			Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_HAMMERING"},
+																{ ['Title'] = 'Mécanicien', 		Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_VEHICLE_MECHANIC"},
+																{ ['Title'] = 'Soudure', 			Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_WELDING"},
+																{ ['Title'] = 'Réparer moteur', 	Function = playEmote, ['EmoteName'] = "PROP_HUMAN_BUM_BIN"},
 																	}
 																}
 															},
@@ -111,13 +111,13 @@ Menu.item = {
 									{['Title'] = 'Autres', ['SubMenu'] = {
 											['Title'] = 'Autres',
 														['Items'] = {
-																{ ['Title'] = 'Marteau', 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_HAMMERING"},
-																{ ['Title'] = 'Pêcher', 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_STAND_FISHING"},
-																{ ['Title'] = 'Jardiner', 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_GARDENER_PLANT"},
-																{ ['Title'] = 'Mécanicien', 		Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_VEHICLE_MECHANIC"},
-																{ ['Title'] = 'Soudure', 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_WELDING"},
-																{ ['Title'] = 'Réparer moteur', 	Function = playEmoteLoop, ['EmoteName'] = "PROP_HUMAN_BUM_BIN"},
-																{ ['Title'] = 'Marteau piqueur', 	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_CONST_DRILL"},
+																{ ['Title'] = 'Marteau', 			Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_HAMMERING"},
+																{ ['Title'] = 'Pêcher', 			Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_STAND_FISHING"},
+																{ ['Title'] = 'Jardiner', 			Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_GARDENER_PLANT"},
+																{ ['Title'] = 'Mécanicien', 		Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_VEHICLE_MECHANIC"},
+																{ ['Title'] = 'Soudure', 			Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_WELDING"},
+																{ ['Title'] = 'Réparer moteur', 	Function = playEmote, ['EmoteName'] = "PROP_HUMAN_BUM_BIN"},
+																{ ['Title'] = 'Marteau piqueur', 	Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_CONST_DRILL"},
 																	}
 																}
 															},
@@ -130,9 +130,9 @@ Menu.item = {
 		{['Title'] = 'Attitudes', ['SubMenu'] = {
 				['Title'] = 'Attitudes',
 							['Items'] = {
-									{ ['Title'] = 'S\'impatienter', 	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_STAND_IMPATIENT"},
-									{ ['Title'] = 'Regarder carte', 	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_TOURIST_MAP"},
-									{ ['Title'] = 'Regarder téléphone', Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_STAND_MOBILE"},
+									{ ['Title'] = 'S\'impatienter', 	Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_STAND_IMPATIENT"},
+									{ ['Title'] = 'Regarder carte', 	Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_TOURIST_MAP"},
+									{ ['Title'] = 'Regarder téléphone', Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_STAND_MOBILE"},
 										}
 									}
 								},
@@ -142,12 +142,12 @@ Menu.item = {
 		{['Title'] = 'Autres', ['SubMenu'] = {
 				['Title'] = 'Autres',
 							['Items'] = {	
-									{ ['Title'] = 'Assis',				Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_PICNIC"},
-									{ ['Title'] = 'Sur le ventre', 		Function = playEmoteLoop, ['EmoteName'] = 'WORLD_HUMAN_SUNBATHE' },
-									{ ['Title'] = 'Sur le dos', 		Function = playEmoteLoop, ['EmoteName'] = 'WORLD_HUMAN_SUNBATHE_BACK' },
-									{ ['Title'] = 'Paparazzi',			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_PAPARAZZI"},
-									{ ['Title'] = 'Filmer téléphone',	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_MOBILE_FILM_SHOCKING"},
-									{ ['Title'] = 'Faire un selfie',	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_TOURIST_MOBILE"},
+									{ ['Title'] = 'Assis',				Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_PICNIC"},
+									{ ['Title'] = 'Sur le ventre', 		Function = playEmote, ['EmoteName'] = 'WORLD_HUMAN_SUNBATHE' },
+									{ ['Title'] = 'Sur le dos', 		Function = playEmote, ['EmoteName'] = 'WORLD_HUMAN_SUNBATHE_BACK' },
+									{ ['Title'] = 'Paparazzi',			Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_PAPARAZZI"},
+									{ ['Title'] = 'Filmer téléphone',	Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_MOBILE_FILM_SHOCKING"},
+									{ ['Title'] = 'Faire un selfie',	Function = playEmote, ['EmoteName'] = "WORLD_HUMAN_TOURIST_MOBILE"},
 										}
 									}
 								}
