@@ -3,16 +3,39 @@ Menu.item = {
     ['Title'] = 'Emotes',
     ['Items'] = {
 	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	---------------------------------------------------------------------- MENU INTERACTIONS -----------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		{['Title'] = 'Interactions', ['SubMenu'] = {
+				['Title'] = 'Sport',
+					['Items'] = {
+									{ ['Title'] = "Serrer la main", 	Function = playAmination ,  dictionaries = "mp_common", clip = 'givetake1_a'},
+									{ ['Title'] = "Dire bonjour",   	Function = playAmination ,  dictionaries = "gestures@m@standing@casual", clip = "gesture_hello" },
+									{ ['Title'] = "Tappes moi en 5", 	Function = playAmination ,  dictionaries = "mp_ped_interaction", clip = "highfive_guy_a" },
+									{ ['Title'] = 'Signe de la main', ['Function'] = playAmination, ['dictionaries'] = "friends@frj@ig_1", ['clip'] = 'wave_e' },
+									{ ['Title'] = "Salut militaire", 	Function = playAmination ,  dictionaries = "mp_player_int_uppersalute", clip = "mp_player_int_salute" },
+									{ ['Title'] = "Branleur", Function = playAmination ,  dictionaries = "mp_player_int_upperwank", clip = "mp_player_int_wank_01" },
+									{ ['Title'] = "Dammed ", Function = playAmination ,  dictionaries = "gestures@m@standing@casual", clip = "gesture_damn" },
+									{ ['Title'] = "Calme toi ", Function = playAmination ,  dictionaries = "gestures@m@standing@casual", clip = "gesture_easy_now" },
+									{ ['Title'] = "No way", Function = playAmination ,  dictionaries = "gestures@m@standing@casual", clip = "gesture_no_way" },
+									{ ['Title'] = "Doigt d'honneur", Function = playAmination ,  dictionaries = "mp_player_int_upperfinger", clip = "mp_player_int_finger_01_enter" },
+									{ ['Title'] = "Balle dans la tête", Function = playAmination ,  dictionaries = "mp_suicide", clip = "pistol" },
+									{ ['Title'] = "Super", Function = playAmination ,  dictionaries = "mp_action", clip = "thanks_male_06" },
+									{ ['Title'] = "Enlacer", Function = playAmination ,  dictionaries = "mp_ped_interaction", clip = "kisses_guy_a" },
+									{ ['Title'] = "Se gratter les couilles", Function = playAmination , dictionaries = "mp_player_int_uppergrab_crotch", clip = "mp_player_int_grab_crotch" },
+										}
+									}
+								},
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	---------------------------------------------------------------------- MENU SPORT ------------------------------------------------------------------------------------------
 	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         {['Title'] = 'Sport', ['SubMenu'] = {
 				['Title'] = 'Sport',
 					['Items'] = {
-									{ ['Title'] = 'Yoga', 			['Event'] = 'playYogaEmote'},
-									{ ['Title'] = 'Pompes', 		['Event'] = 'playPompeEmote'},
-									{ ['Title'] = 'Jogging', 		['Event'] = 'playJogEmote'},
-									{ ['Title'] = 'Bodybuilder', 	['Event'] = 'playMuscleEmote'},
-									{ ['Title'] = 'Soulever poids', ['Event'] = 'playSouleverEmote'},
+									{ ['Title'] = "Yoga", 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_YOGA"},
+									{ ['Title'] = 'Pompes', 		Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_PUSH_UPS"},
+									{ ['Title'] = 'Jogging', 		Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_JOG_STANDING"},
+									{ ['Title'] = 'Bodybuilder', 	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_MUSCLE_FLEX"},
+									{ ['Title'] = 'Soulever poids', Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_MUSCLE_FREE_WEIGHTS"},
 										}
 									}
 								},
@@ -22,13 +45,13 @@ Menu.item = {
 		{['Title'] = 'Festif', ['SubMenu'] = {
 				['Title'] = 'Festif',
 							['Items'] = {
-									{ ['Title'] = 'Musique', 			['Event'] = 'playMusicEmote'},
-									{ ['Title'] = 'Fumer', 				['Event'] = 'playSmokeEmote'},
-									{ ['Title'] = 'Fumer joint', 		['Event'] = 'playPotEmote'},
-									{ ['Title'] = 'Boire bouteille', 	['Event'] = 'playDrinkEmote'},
-									{ ['Title'] = 'Boire bière', 		['Event'] = 'playBiereEmote'},
-									{ ['Title'] = 'Applaudir', 			['Event'] = 'playAplauEmote'},
-									{ ['Title'] = 'Applaudir2', 		['Event'] = 'playAplauEmote'},
+									{ ['Title'] = 'Musique', 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_MUSICIAN"},
+									{ ['Title'] = 'Fumer', 				Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_SMOKING"},
+									{ ['Title'] = 'Fumer joint', 		Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_SMOKING_POT"},
+									{ ['Title'] = 'Boire bouteille', 	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_DRINKING"},
+									{ ['Title'] = 'Boire bière', 		Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_PARTYING"},
+									{ ['Title'] = 'Applaudir', 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_CHEERING"},
+									{ ['Title'] = "Danser", 			Function = playAmination , dictionaries = "amb@world_human_partying@female@partying_beer@base", clip = "base" },
 										}
 									}
 								},
@@ -44,12 +67,12 @@ Menu.item = {
 									{['Title'] = 'Police', ['SubMenu'] = {
 											['Title'] = 'Police',
 														['Items'] = {					
-																{ ['Title'] = 'Examiner', 	['Event'] = 'playKneelEmote'},
-																{ ['Title'] = 'Calepin', 	['Event'] = 'playNotepadEmote'},
-																{ ['Title'] = 'Clipboard', 	['Event'] = 'playClipboardEmote'},
-																{ ['Title'] = 'Jumelles', 	['Event'] = 'playBinoEmote'},
-																{ ['Title'] = 'Police', 	['Event'] = 'playCopEmote'},
-																{ ['Title'] = 'Trafique', 	['Event'] = 'playTrafficEmote'},
+																{ ['Title'] = 'Examiner', 	Function = playEmoteLoop, ['EmoteName'] = "CODE_HUMAN_MEDIC_KNEEL"},
+																{ ['Title'] = 'Calepin', 	Function = playEmoteLoop, ['EmoteName'] = "CODE_HUMAN_MEDIC_TIME_OF_DEATH"},
+																{ ['Title'] = 'Clipboard', 	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_CLIPBOARD"},
+																{ ['Title'] = 'Jumelles', 	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_BINOCULARS"},
+																{ ['Title'] = 'Police', 	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_COP_IDLES"},
+																{ ['Title'] = 'Trafique', 	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_CAR_PARK_ATTENDANT"},
 																	}
 																}
 															},
@@ -59,10 +82,26 @@ Menu.item = {
 									{['Title'] = 'Medecin', ['SubMenu'] = {
 											['Title'] = 'Medecin',
 														['Items'] = {					
-																{ ['Title'] = 'Examiner', 			['Event'] = 'playKneelEmote'},
-																{ ['Title'] = 'Calepin', 			['Event'] = 'playNotepadEmote'},
-																{ ['Title'] = 'Clipboard', 			['Event'] = 'playClipboardEmote'},
-																{ ['Title'] = 'Prendre le pouls', 	['Event'] = 'playPoulsEmote'},
+																{ ['Title'] = 'Examiner', 			Function = playEmoteLoop, ['EmoteName'] = "CODE_HUMAN_MEDIC_KNEEL"},
+																{ ['Title'] = 'Calepin', 			Function = playEmoteLoop, ['EmoteName'] = "CODE_HUMAN_MEDIC_TIME_OF_DEATH"},
+																{ ['Title'] = 'Clipboard', 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_CLIPBOARD"},
+																{ ['Title'] = 'Prendre le pouls', 	Function = playEmoteLoop, ['EmoteName'] = "CODE_HUMAN_MEDIC_TEND_TO_DEAD"},
+																	}
+																}
+															},
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	---------------------------------------------------------------------- MENU DEPANNEUR --------------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
+									{['Title'] = 'Medecin', ['SubMenu'] = {
+											['Title'] = 'Medecin',
+														['Items'] = {					
+																{ ['Title'] = 'Examiner', 			Function = playEmoteLoop, ['EmoteName'] = "CODE_HUMAN_MEDIC_KNEEL"},
+																{ ['Title'] = 'Calepin', 			Function = playEmoteLoop, ['EmoteName'] = "CODE_HUMAN_MEDIC_TIME_OF_DEATH"},
+																{ ['Title'] = 'Clipboard', 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_CLIPBOARD"},
+																{ ['Title'] = 'Marteau', 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_HAMMERING"},
+																{ ['Title'] = 'Mécanicien', 		Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_VEHICLE_MECHANIC"},
+																{ ['Title'] = 'Soudure', 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_WELDING"},
+																{ ['Title'] = 'Réparer moteur', 	Function = playEmoteLoop, ['EmoteName'] = "PROP_HUMAN_BUM_BIN"},
 																	}
 																}
 															},
@@ -72,13 +111,13 @@ Menu.item = {
 									{['Title'] = 'Autres', ['SubMenu'] = {
 											['Title'] = 'Autres',
 														['Items'] = {
-																{ ['Title'] = 'Marteau', 			['Event'] = 'playMarteauEmote'},
-																{ ['Title'] = 'Pêcher', 			['Event'] = 'playPecheEmote'},
-																{ ['Title'] = 'Jardiner', 			['Event'] = 'playPlantEmote'},
-																{ ['Title'] = 'Mécanicien', 		['Event'] = 'playMechaEmote'},
-																{ ['Title'] = 'Soudure', 			['Event'] = 'playSoudEmote'},
-																{ ['Title'] = 'Réparer moteur', 	['Event'] = 'playMotEmote'},
-																{ ['Title'] = 'Marteau piqueur', 	['Event'] = 'playPiqueEmote'},
+																{ ['Title'] = 'Marteau', 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_HAMMERING"},
+																{ ['Title'] = 'Pêcher', 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_STAND_FISHING"},
+																{ ['Title'] = 'Jardiner', 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_GARDENER_PLANT"},
+																{ ['Title'] = 'Mécanicien', 		Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_VEHICLE_MECHANIC"},
+																{ ['Title'] = 'Soudure', 			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_WELDING"},
+																{ ['Title'] = 'Réparer moteur', 	Function = playEmoteLoop, ['EmoteName'] = "PROP_HUMAN_BUM_BIN"},
+																{ ['Title'] = 'Marteau piqueur', 	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_CONST_DRILL"},
 																	}
 																}
 															},
@@ -91,9 +130,9 @@ Menu.item = {
 		{['Title'] = 'Attitudes', ['SubMenu'] = {
 				['Title'] = 'Attitudes',
 							['Items'] = {
-									{ ['Title'] = 'S\'impatienter', 	['Event'] = 'playImpaEmote'},
-									{ ['Title'] = 'Regarder carte', 	['Event'] = 'playMapEmote'},
-									{ ['Title'] = 'Regarder téléphone', ['Event'] = 'playRtelEmote'},
+									{ ['Title'] = 'S\'impatienter', 	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_STAND_IMPATIENT"},
+									{ ['Title'] = 'Regarder carte', 	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_TOURIST_MAP"},
+									{ ['Title'] = 'Regarder téléphone', Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_STAND_MOBILE"},
 										}
 									}
 								},
@@ -103,11 +142,12 @@ Menu.item = {
 		{['Title'] = 'Autres', ['SubMenu'] = {
 				['Title'] = 'Autres',
 							['Items'] = {	
-									{ ['Title'] = 'Assis', 				['Event'] = 'playSitEmote'},
-									{ ['Title'] = 'Allonger', 			['Event'] = 'playAllonEmote'},
-									{ ['Title'] = 'Paparazzi', 			['Event'] = 'playPhotoEmote'},
-									{ ['Title'] = 'Filmer téléphone', 	['Event'] = 'playFilmEmote'},
-									{ ['Title'] = 'Faire un selfie', 	['Event'] = 'playSelfieEmote'},
+									{ ['Title'] = 'Assis',				Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_PICNIC"},
+									{ ['Title'] = 'Sur le ventre', 		Function = playEmoteLoop, ['EmoteName'] = 'WORLD_HUMAN_SUNBATHE' },
+									{ ['Title'] = 'Sur le dos', 		Function = playEmoteLoop, ['EmoteName'] = 'WORLD_HUMAN_SUNBATHE_BACK' },
+									{ ['Title'] = 'Paparazzi',			Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_PAPARAZZI"},
+									{ ['Title'] = 'Filmer téléphone',	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_MOBILE_FILM_SHOCKING"},
+									{ ['Title'] = 'Faire un selfie',	Function = playEmoteLoop, ['EmoteName'] = "WORLD_HUMAN_TOURIST_MOBILE"},
 										}
 									}
 								}
@@ -140,6 +180,10 @@ Menu.ItemHeight = 0.03
 
 Menu.isOpen = false   -- /!\ Ne pas toucher
 Menu.currentPos = {1} -- /!\ Ne pas toucher
+
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	---------------------------------------------------------------------- Menu System ------------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 function Menu.drawRect(posX, posY, width, heigh, color)
     DrawRect(posX + width / 2, posY + heigh / 2, width, heigh, color[1], color[2], color[3], color[4])
@@ -250,409 +294,3 @@ Citizen.CreateThread(function()
         end
 	end
 end)
-	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	---------------------------------------------------------------------- Déclaration des emotes ------------------------------------------------------------------------------
-	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-playing_emote = false;
-
-local Keys = { ["W"] = 32, ["A"] = 34, ["S"] = 8, ["D"] = 9 } --Déclaration des touches de déplacements
-
-AddEventHandler('playMuscleEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_MUSCLE_FLEX", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playSouleverEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_MUSCLE_FREE_WEIGHTS", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playBiereEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_PARTYING", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playPotEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_SMOKING_POT", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playImpaEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_STAND_IMPATIENT", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playRtelEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_STAND_MOBILE", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playAllonEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_SUNBATHE", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playSelfieEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_TOURIST_MOBILE", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playMapEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_TOURIST_MAP", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playSoudEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_WELDING", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playMotEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "PROP_HUMAN_BUM_BIN", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playPoulsEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "CODE_HUMAN_MEDIC_TEND_TO_DEAD", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playPlantEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_GARDENER_PLANT", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playFilmEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_MOBILE_FILM_SHOCKING", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playPiqueEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_CONST_DRILL", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playCheerEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_CHEERING", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playBinoEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_BINOCULARS", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playJogEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_JOG_STANDING", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playMechaEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_VEHICLE_MECHANIC", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playPecheEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_STAND_FISHING", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playAplauEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_CHEERING", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playPompeEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_PUSH_UPS", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playSmokeEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_SMOKING", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playDrinkEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_DRINKING", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playCopEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_COP_IDLES", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playSitEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_PICNIC", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playYogaEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_YOGA", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playKneelEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "CODE_HUMAN_MEDIC_KNEEL", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playMarteauEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_HAMMERING", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playNotepadEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "CODE_HUMAN_MEDIC_TIME_OF_DEATH", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playTrafficEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_CAR_PARK_ATTENDANT", 0, false);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playPhotoEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_PAPARAZZI", 0, false);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playClipboardEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_CLIPBOARD", 0, false);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playMusicEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		TaskStartScenarioInPlace(ped, "WORLD_HUMAN_MUSICIAN", 0, true);
-		playing_emote = true;
-	end
-	
-	Menu.hidden = true
-end)
-
-AddEventHandler('playCancelEmote', function()
-	ped = GetPlayerPed(-1);
-	
-	if ped then
-		ClearPedTasks(ped);
-		playing_emote = false
-	end
-	
-	Menu.hidden = true
-end)
-
-	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	---------------------------------------------------------------------- Arrêt des emotes au déplacement ---------------------------------------------------------------------
-	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Citizen.CreateThread(function()
-	while true do
-                Citizen.Wait(0)
-		if playing_emote == true then
-			if IsControlPressed(1, Keys["W"]) or IsControlPressed(1, Keys["A"]) or IsControlPressed(1, Keys["S"]) or IsControlPressed(1, Keys["D"])  then
-				ClearPedTasks(ped);
-				playing_emote = false;
-			end
-		end
-        end
-end)	
