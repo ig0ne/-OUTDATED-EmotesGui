@@ -282,9 +282,6 @@ function Menu.keyControl()
             if cMenu.Items[cSelect].Event ~= nil then
                 TriggerEvent(cMenu.Items[cSelect].Event, cMenu.Items[cSelect])
             end
-            if cMenu.Items[cSelect].Close == nil or cMenu.Items[cSelect].Close == true then
-                Menu.isOpen = false
-            end
         end
     end
 
