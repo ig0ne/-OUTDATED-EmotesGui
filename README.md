@@ -1,4 +1,4 @@
-[OUTDATED] NO MORE SUPORT
+# [OUTDATED] NO MORE SUPORT
 # EmotesGui
 FiveM EmotesGui
 
